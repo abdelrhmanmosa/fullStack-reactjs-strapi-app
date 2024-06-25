@@ -15,6 +15,14 @@ module.exports = [
       },
     },
   },
+  {
+    name: "strapi::cors",
+    config: {
+      enabled: true,
+      headers: "*",
+      origin: ["https://full-stack-reactjs-strapi-app-clinte-side.vercel.app/"],
+    },
+  },
   "strapi::cors",
   "strapi::poweredBy",
   "strapi::query",
