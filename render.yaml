@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: strapi-app
+    env: node
+    plan: free
+    buildCommand: yarn build
+    startCommand: yarn start
+    envVars:
+      - key: DATABASE_URL
+        value: <http://localhost:1337/admin>
+      - key: JWT_SECRET
+        value: <qfjLEVvE293IUIgm75Rw6SYu_BY>
